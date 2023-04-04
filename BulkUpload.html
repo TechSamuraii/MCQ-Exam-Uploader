@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload Exam Questions and Answers</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Upload MCQ Exam Questions and Answers</h1>
+	<form id="upload-form" enctype="multipart/form-data">
+		<label for="question">Question:</label>
+		<textarea id="question" name="question" rows="4" cols="50"></textarea>
+		<label for="option1">Option 1:</label>
+		<input type="text" id="option1" name="option1">
+		<label for="option2">Option 2:</label>
+		<input type="text" id="option2" name="option2">
+		<label for="option3">Option 3:</label>
+		<input type="text" id="option3" name="option3">
+		<label for="option4">Option 4:</label>
+		<input type="text" id="option4" name="option4">
+		<label for="answer">Correct Answer:</label>
+		<select id="answer" name="answer">
+			<option value="option1">Option 1</option>
+			<option value="option2">Option 2</option>
+			<option value="option3">Option 3</option>
+			<option value="option4">Option 4</option>
+		</select>
+		<label for="image">Upload an Image:</label>
+		<input type="file" id="image" name="image">
+		<label for="csv-file">Upload questions via CSV file:</label>
+        <input type="file" name="csv-file" id="csv-file">
+		<button type="submit" id="submit-btn">Submit</button>
+	</form>
+	<div id="message"></div>
+	<script src="script.js"></script>
+</body>
+</html>
